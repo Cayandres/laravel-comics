@@ -1,0 +1,23 @@
+@use './variables' as*;
+
+@mixin beetweenAround($type: "both"){
+  display: flex;
+  @if $type == "beetween"{
+    justify-content: space-between;
+  }@else if $type == "around"{
+    justify-content: space-around;
+  }@else if $type == "evenly"{
+    justify-content: space-evenly;}
+}
+
+@mixin centerFlex($type : "both"){
+  display: flex;
+  @if $type == "vertical"{
+    align-items: center;
+  }@else if $type == "horizontal"{
+    justify-content: center;
+  }@else if $type == "both"{
+    justify-content: center;
+    align-items: center;
+  }
+}
