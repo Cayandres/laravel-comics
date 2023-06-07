@@ -1,6 +1,14 @@
 @import '~bootstrap/scss/bootstrap';
 
-@import '@fontsource/roboto/index.css';
 
-@use './general/general' as*;
+@import './general/variables';
+@import './general/mixin';
+@import './general/general';
+@import './general/footer';
+@import './general/header';
+@import './general/main';
+@import './general/ctablue';
+
+
+
 

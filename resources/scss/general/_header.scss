@@ -1,0 +1,19 @@
+
+
+header{
+  @include beetweenAround("beetween");
+  align-items: center;
+  ul{
+    display: flex;
+    li{
+      text-transform: uppercase;
+      padding: 40px 5px;
+      a{
+        color: black;
+          &:hover{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  } 

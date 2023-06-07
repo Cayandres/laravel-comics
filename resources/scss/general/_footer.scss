@@ -1,0 +1,72 @@
+footer{
+  background-image: url(../src/img/footer-bg.jpg);
+  .footer.up{
+    display: flex;
+    min-height: 250px;
+    .link-list{
+      display: flex;
+      width: 55%;
+      margin: 30px 0;
+      nav{
+        padding: 20px 30px 0 0;
+      }
+      h2{
+        padding-bottom: 25px;
+        color: white;
+      }
+      ul{
+        line-height: 25px;
+      }
+      a{
+        color: gray;
+        &:hover{
+          color: $primary-color;
+        }
+      }
+    }
+    
+  
+    .image{
+      width: 50%;
+      min-height: 100px;
+      position: relative;
+      overflow: hidden;
+      img{
+        position: absolute;
+        bottom: -40px;
+        height: 550px;
+        width: 100%;
+      }
+    }
+  }
+
+  .footer-social{
+    height: 100px;
+    background-color: #303030;
+    .footer.down{
+      height: 100%;
+      @include beetweenAround('beetween');
+      align-items: center;
+      button{
+        padding: 10px;
+        background-color: #303030;
+        border: 1px solid $primary-color;
+        color:white
+      }
+      .social{
+        color: white;
+        display: flex;
+        align-items: center;
+        h4{
+          color: $primary-color;
+          padding-right: 15px;
+        }
+        ul{
+          display: flex;  
+        }
+      }
+    }
+  }
+
+}
+
