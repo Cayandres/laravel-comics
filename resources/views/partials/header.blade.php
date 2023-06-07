@@ -1,3 +1,7 @@
+@php
+    $main_menu = config('menus.menus_header')
+@endphp
+
 <header class="container">
     <div>
       <img src="/src/img/dc-logo.png" alt="">
@@ -5,11 +9,13 @@
     <div>
       <nav>
         <ul>
-          <li class="{{ Route::currentRouteName() === 'comics' ? 'active' : '' }}"><a  href="{{ route('comics') }}">CHARACTERS</a></li>
-          <li><a href="#"></a>2</li>
-          <li><a href="#"></a>3</li>
-          <li><a href="#"></a>4</li>
+          @foreach($main_menu as $item)
 
+          <li>
+          <a  href="{{ route($item['name']) }}">{{ $item['text'] }}</a>
+          </li>
+
+          @endforeach
         </ul>
       </nav>
     </div>
