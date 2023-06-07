@@ -5,7 +5,7 @@
     <div>
       <nav>
         <ul>
-          <li><a href="#"></a>1</li>
+          <li><a href="{{ route('comics') }}">CHARACTERS</a></li>
           <li><a href="#"></a>2</li>
           <li><a href="#"></a>3</li>
           <li><a href="#"></a>4</li>
