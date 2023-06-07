@@ -8,6 +8,7 @@ return view('home');
 })->name('home');
 
 Route::get('/fumetti', function () {
-return view('partials.comics');
+  $comics = config('comics');
+return view('comics', compact('comics'));
 })->name('comics');
 
