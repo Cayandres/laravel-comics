@@ -12,7 +12,9 @@
 
         <div class="card">
           <div class="card-image">
+          <a href="{{route('product', ['slug' => $comic['slug']])}}">
             <img src="{{ $comic['thumb'] }}" alt="">
+          </a>
          </div>
          <h4>{{ $comic['title'] }}</h4>
         </div>  
